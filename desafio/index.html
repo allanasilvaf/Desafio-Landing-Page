@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <title>My Landing Page - Allana Silva</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <ul  class = "menu">
+    <li class="menu_list">
+      <a href="" class="menu_link">Início</a>
+    </li>
+    <li class="menu_list">
+      <a href="" class="menu_link">Sobre</a>
+    </li>
+    <li class="menu_list">
+      <a href="" class="menu_link">Projetos</a>
+    </li>
+    <li class="menu_list">
+      <a href="" class="menu_link">Contatos</a>
+    </li>
+  </ul>
+
+ <header class="barra">
+  <img src="Dev.png" alt="Logotipo">
+  <nav>
+    <ul class="menu">
+      <li class="menu_list">
+        <a href="#inicio" class="menu_link">Início</a>
+      </li>
+      <li class="menu_list">
+        <a href="#sobre" class="menu_link">Sobre</a>
+      </li>
+      <li class="menu_list">
+        <a href="#projetos" class="menu_link">Projetos</a>
+      </li>
+      <li class="menu_list">
+        <a href="#contato" class="menu_link">Contatos</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+  <img src="allanaimagem.jpg" alt="Logo" class="logo-circular">
+
+  <section class="início" id="inicio">
+    <h1>SEJA BEM VINDO(A) AO MEU MUNDO</h1>
+    <h2>Olá, eu sou a <span class="destaque">Allana Silva</span></h2>
+    <p>Sou uma Desenvolvedora Front-End apaixonada por aprendizado contínuo <br>e pela aquisição de conhecimento e experiência no setor profissional.</p>
+    <a href="#contato" class="btn">Entre em contato!</a>
+  </section>
+
+  <section class="sobre" id="sobre">
+    <h2>Sobre Mim:</h2>
+    <p>Me chamo Allana, atualmente tenho 18 anos e moro <br>em Bélem do Paŕa. Estou no segundo semestre de <br> Engenharia da Computação na UFPA e me interesso <br> por Desenvolvimento Web e Mobile Front-End, támbem <br> em Design e áreas voltadas para hardwares. Busco <br>sempre a constância no hábito de praticar exercícios <br>e aproveito o tempo livre para praticar meus dons <br>culinários.</p>
+    <img src="fotoall.jpg" alt="Logo" class="fotoall">
+  </section>
+
+  <section class="projetos" id="projetos">
+    <h2>Projetos Recentes</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Projeto 1</h3>
+        <p>Landing page para startup com foco em responsividade e performance.</p>
+      </div>
+      <div class="card">
+        <h3>Projeto 2</h3>
+        <p>Aplicativo de tarefas com React e LocalStorage.</p>
+      </div>
+      <div class="card">
+        <h3>Projeto 3</h3>
+        <p>Portfólio pessoal com animações e tema escuro.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contato" id="contato">
+    <h2>Fale Comigo</h2>
+    <form id="contact-form">
+      <input type="text" id="nome" placeholder="Seu nome" required />
+      <input type="email" id="email" placeholder="Seu e-mail" required />
+      <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="msg-enviada" class="hidden">Mensagem enviada com sucesso! ✅</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
