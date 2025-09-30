@@ -1,0 +1,138 @@
+:root {
+  --bs-primary: #6f42c1;
+  --bs-light: #1a2035;
+  --bs-body-color-dark: #e9ecef;
+  --bs-dark: #0e061b;
+  --bs-text-color:var(--bs-primary);
+}
+
+*{
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+}
+
+/* menu de navegação */
+.bg-dark {
+  background-color:var(--bs-dark) !important;
+}
+
+.nav-link{
+  color: #ffffff !important;
+}
+
+/* botões */
+.btn-lg{
+  --bs-btn-padding-y: 0.5rem;
+  --bs-btn-padding-x: 1rem;
+  --bs-btn-font-size: 1.25rem;
+  --bs-btn-border-radius: var(--bs-border-radius-lg);
+}
+
+.btn-primary{
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+}
+
+body {  
+
+  background: linear-gradient(to right, #04062e, #0a1a47, #250e3b, #440281);
+  background-size: 200% 200%;
+  animation: animate-background 40s infinite ease-in-out;
+  
+  color: #ffffff;
+
+  line-height: 1.6; 
+}
+
+
+.destaque {
+  background: linear-gradient(90deg, #ff00ff, #6c89e9, #b6c7ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+
+.btn-primary:hover {
+  background: linear-gradient(to right, #080f27, #340a5c);
+  color: #ffffff;
+  border: 1px solid #7b88fd;
+  box-shadow: 
+    0 0 5px #7b88fd,
+    0 0 20px #7b88fd,
+    0 0 50px #7b88fd,
+    0 0 100px #7b88fd;
+}
+
+#fotoAllana{
+  animation: Brilhar 3s infinite ease-in-out, fadeIn 2s ease-in-out;
+}
+
+.hobby:hover,
+.hobby:active {
+  animation: swing 0.7s ease-in-out;
+}
+
+
+/*animações*/
+
+@keyframes animate-background {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes Brilhar {
+  0% {
+    box-shadow: 0 0 10px #ffffff4d;
+  }
+  50% {
+    box-shadow: 0 0 20px #ffffff99;
+  }
+  100% {
+    box-shadow: 0 0 10px #ffffff4d;
+  }
+}
+
+@keyframes swing {
+  15% {
+    transform: translateX(5px) rotate(5deg);
+  }
+  30% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(3px) rotate(3deg);
+  }
+  65% {
+    transform: translateX(-3px) rotate(-3deg);
+  }
+  80% {
+    transform: translateX(2px) rotate(2deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0);
+  }
+}
